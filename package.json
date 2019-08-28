@@ -1,0 +1,57 @@
+{
+  "name": "use-cloudinary",
+  "version": "1.0.0",
+  "description": "Hook for managing cloudinary uploads",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "repository": "launchpadlab/use-cloudinary",
+  "homepage": "https://github.com/launchpadlab/use-cloudinary",
+  "author": {
+    "name": "dpikt"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run build:development",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "babel src --out-dir lib",
+    "build:esm": "BABEL_ENV=esm babel src --out-dir esm",
+    "build:development": "BABEL_ENV=esm babel src --watch --out-dir esm",
+    "clean": "rm -rf lib && rm -rf esm",
+    "lint": "eslint src --max-warnings=0 --fix",
+    "precommit": "yarn lint",
+    "prepublish": "yarn run clean && yarn run build",
+    "test": "jest",
+    "size": "yarn build && size-limit"
+  },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "lib/",
+    "src/",
+    "esm/"
+  ],
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "react-use": "^11.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/polyfill": "^7.4.4",
+    "@launchpadlab/babel-preset": "^2.1.0",
+    "@launchpadlab/eslint-config": "^2.7.0",
+    "@size-limit/preset-small-lib": "^2.1.1",
+    "@testing-library/react-hooks": "^2.0.1",
+    "eslint": "^6.1.0",
+    "husky": "^3.0.3",
+    "jest": "^24.8.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-test-renderer": "^16.9.0",
+    "size-limit": "^2.1.1"
+  }
+}
