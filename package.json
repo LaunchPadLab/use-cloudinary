@@ -32,7 +32,7 @@
     "esm/"
   ],
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-fetch": "^3.0.0",
     "react-use": "^11.3.2"
   },
   "peerDependencies": {
