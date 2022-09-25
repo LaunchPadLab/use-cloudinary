@@ -46,7 +46,7 @@
     "@launchpadlab/eslint-config": "^2.7.0",
     "@size-limit/preset-small-lib": "^2.1.1",
     "@testing-library/react-hooks": "^2.0.1",
-    "eslint": "^6.1.0",
+    "eslint": "^8.0.0",
     "husky": "^3.0.3",
     "jest": "^24.8.0",
     "react": "^16.9.0",
