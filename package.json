@@ -44,7 +44,7 @@
     "@babel/polyfill": "^7.4.4",
     "@launchpadlab/babel-preset": "^2.1.0",
     "@launchpadlab/eslint-config": "^2.7.0",
-    "@size-limit/preset-small-lib": "^2.1.1",
+    "@size-limit/preset-small-lib": "^10.0.0",
     "@testing-library/react-hooks": "^2.0.1",
     "eslint": "^6.1.0",
     "husky": "^3.0.3",
